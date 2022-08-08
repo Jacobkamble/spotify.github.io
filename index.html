@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Spotify</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <div class="logo">
+                    <img id="logo" src="logo.png" alt="Spotify" />
+                    <h1>Spotify</h1>
+                </div>
+            </li>
+            <li>Home</li>
+            <li>About Us</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songlist">
+            <h1>Best of NCS - No copyright songs</h1>
+            <div id="songitemcontainer"></div>
+        </div>
+        <div class="songbanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myprogressbar" value="0" min="0" max="100" />
+        <div class="icons">
+            <span style="font-size: 1em; color: white">
+                <button class="btnB" id="previous">Previous</button>
+                <button class="btnB" id="play">Play</button>
+                <button class="btnB" id="next">Next</button>
+            </span>
+        </div>
+        <div class="songinfo">
+            <img id="gif" src="playing.gif" alt="" width="44px" />
+            <span id="songsName">Unstoppable by Sia</span>
+            <span id="time">0:00/0:00</span>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
